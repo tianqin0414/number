@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="打印此页面" onclick="printpage()" />
+<table class="dataintable">
+    <tr>
+        <th>标题１</th>
+        <th>标题１</th>
+        <th>标题１</th>
+        <th>标题１</th>
+        <th>标题１</th>
+    </tr>
+    <tr>
+        <td>内容</td>
+        <td>内容</td>
+        <td>内容</td>
+        <td>内容</td>
+        <td>内容</td>
+    </tr>
+    <tr>
+        <td>内容</td>
+        <td>内容</td>
+        <td>内容</td>
+        <td>内容</td>
+        <td>内容</td>
+    </tr>
+    <tr>
+        <th colspan="5">分页代码</th>
+    </tr>
+</table>
+</body>
+</html>
+分享一套简洁大方HTML表格样式，看起来非常舒服、简洁的表格效果，主要用于列数据。
+主要分成td和th两种单元格样式，th是表头，td是一般数据。
+
+<style>
+    table.dataintable {
+        border: 1px solid #888888;
+        border-collapse: collapse;
+        font-family: Arial,Helvetica,sans-serif;
+        margin-top: 10px;
+        width: 100%;
+    }
+    table.dataintable th {
+        background-color: #CCCCCC;
+        border: 1px solid #888888;
+        padding: 5px 15px 5px 5px;
+        text-align: left;
+        vertical-align: baseline;
+    }
+    table.dataintable td {
+        background-color: #EFEFEF;
+        border: 1px solid #AAAAAA;
+        padding: 5px 15px 5px 5px;
+        vertical-align: text-top;
+    }
+</style>
+
+<script>
+    function printpage() {
+        window.print()
+    }
+</script>
